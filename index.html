@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Overseeing Amazonia</title>
+        <link href="styles.css" rel="stylesheet" />
+        <link href="image-zoom.css" rel="stylesheet" />
+        <script type="text/javascript" src="html_and_img_injector.js" defer></script>
+        <script type="text/javascript" src="toggle_and_scroll.js" defer></script>
+    </head>
+    <body>
+        <div id="table-of-contents-wrapper">
+            <div class="section-wrapper section_number slide-left" id="contents-conclusions">
+                <div class="contents-item-wrapper">
+                    <div class="contents-image conclusions-image">
+                        <img src="assets/024.jpeg" />
+                    </div>
+                    <input type="checkbox" class="checkbox" id="conclusions-checkbox" name="conclusions" onclick="toggle(this);" checked />
+                    <label class="checkbox_label" id="conclusions" onclick="scrollToSection(this);">conclusions</label>
+                </div>
+            </div>
+            <div class="section-wrapper slide-left" id="contents-part-3">
+                <span class="section_number">III</span>
+                <div class="contents-image part-3-image">
+                    <img src="assets/024.jpeg" />
+                </div>
+                <div class="contents-item-wrapper">
+                    <input type="checkbox" class="checkbox" id="looking-at-the-sky-checkbox" name="looking-at-the-sky" checked />
+                    <label class="checkbox_label" id="looking-at-the-sky" onclick="scrollToSection(this);">looking at the sky</label>
+                </div>
+                <div class="contents-item-wrapper">
+                    <input type="checkbox" class="checkbox" id="global-amazonia-checkbox" name="global-amazonia" checked />
+                    <label class="checkbox_label" id="global-amazonia" onclick="scrollToSection(this);">global amazonia</label>
+                </div>
+                <div class="contents-item-wrapper">
+                    <input type="checkbox" class="checkbox" id="leapfrogging-checkbox" name="leapfrogging" checked />
+                    <label class="checkbox_label" id="leapfrogging" onclick="scrollToSection(this);">leapfrogging</label>
+                </div>
+                <div class="contents-item-wrapper">
+                    <input type="checkbox" class="checkbox" id="grids-and-maps-checkbox" name="grids-and-maps" checked />
+                    <label class="checkbox_label" id="grids-and-maps" onclick="scrollToSection(this);">grids and maps</label>
+                </div>
+                <div class="contents-item-wrapper">
+                    <input type="checkbox" class="checkbox" id="pixie-dust-checkbox" name="pixie-dust" checked />
+                    <label class="checkbox_label" id="pixie-dust" onclick="scrollToSection(this);">pixie-dust</label>
+                </div>
+                <div class="contents-item-wrapper">
+                    <input type="checkbox" class="checkbox" id="embodied-evidence-checkbox" name="embodied-evidence" checked />
+                    <label class="checkbox_label" id="embodied-evidence" onclick="scrollToSection(this);">embodied evidence</label>
+                </div>
+                <div class="contents-item-wrapper">
+                    <input type="checkbox" class="checkbox" id="can-the-sky-speak-checkbox" name="can-the-sky-speak" checked />
+                    <label class="checkbox_label" id="can-the-sky-speak" onclick="scrollToSection(this);">can the sky speak?</label>
+                </div>
+                <!-- <div class="contents-item-wrapper">
+                    <input type="checkbox" class="checkbox" id="bibliography-checkbox" name="bibliography" checked />
+                    <label class="checkbox_label" id="bibliography" onclick="scrollToSection(this);">Bibliography</label>
+                </div> -->
+            </div>
+            <div class="section-wrapper slide-left" id="contents-part-2">
+                <span class="section_number">II</span>
+                <div class="contents-image part-2-image">
+                    <img src="assets/024.jpeg" />
+                </div>
+                <div class="contents-item-wrapper">
+                    <input type="checkbox" class="checkbox" id="partitioning-grounds-checkbox" name="partitioning-grounds" checked />
+                    <label class="checkbox_label" id="partitioning-grounds" onclick="scrollToSection(this);">partitioning grounds</label>
+                </div>
+                <div class="contents-item-wrapper">
+                    <input type="checkbox" class="checkbox" id="blanket-citizenship-checkbox" name="blanket-citizenship" checked />
+                    <label class="checkbox_label" id="blanket-citizenship" onclick="scrollToSection(this);">blanket citizenship</label>
+                </div>
+                <div class="contents-item-wrapper">
+                    <input type="checkbox" class="checkbox" id="demarcating-difference-checkbox" name="demarcating-difference" checked />
+                    <label class="checkbox_label" id="demarcating-difference" onclick="scrollToSection(this);">demarcating difference</label>
+                </div>
+                <div class="contents-item-wrapper">
+                    <input type="checkbox" class="checkbox" id="labor-of-belonging-checkbox" name="labor-of-belonging" checked />
+                    <label class="checkbox_label" id="labor-of-belonging" onclick="scrollToSection(this);">labor of belonging</label>
+                </div>
+                <div class="contents-item-wrapper">
+                    <input type="checkbox" class="checkbox" id="dependency-checkbox" name="dependency" checked />
+                    <label class="checkbox_label" id="dependency" onclick="scrollToSection(this);">dependency</label>
+                </div>
+                <div class="contents-item-wrapper">
+                    <input type="checkbox" class="checkbox" id="gifts-checkbox" name="gifts" checked />
+                    <label class="checkbox_label" id="gifts" onclick="scrollToSection(this);">gifts</label>
+                </div>
+                <div class="contents-item-wrapper">
+                    <input type="checkbox" class="checkbox" id="fear-of-big-space-checkbox" name="fear-of-big-space" checked />
+                    <label class="checkbox_label" id="fear-of-big-space" onclick="scrollToSection(this);">fear of big spaces</label>
+                </div>
+                <div class="contents-item-wrapper">
+                    <input type="checkbox" class="checkbox" id="free-trade-zone-checkbox" name="free-trade-zone" checked />
+                    <label class="checkbox_label" id="free-trade-zone" onclick="scrollToSection(this);">free trade zone</label>
+                </div>
+                <div class="contents-item-wrapper">
+                    <input type="checkbox" class="checkbox" id="spatial-uncertainty-checkbox" name="spatial-uncertainty" checked />
+                    <label class="checkbox_label" id="spatial-uncertainty" onclick="scrollToSection(this);">spatial uncertainty</label>
+                </div>
+            </div>
+            <div class="section-wrapper slide-left" id="contents-part-1">
+                <span class="section_number">I</span>
+                <div class="contents-image part-1-image">
+                    <img src="assets/024.jpeg" />
+                </div>
+                <div class="contents-item-wrapper">
+                    <input type="checkbox" class="checkbox" id="things-of-the-underground-checkbox" name="things-of-the-underground" checked />
+                    <label class="checkbox_label" id="things-of-the-underground" onclick="scrollToSection(this);">things of the underground</label>
+                </div>
+                <div class="contents-item-wrapper">
+                    <input type="checkbox" class="checkbox" id="what-other-sovereignty-checkbox" name="what-other-sovereignty" checked />
+                    <label class="checkbox_label" id="what-other-sovereignty" onclick="scrollToSection(this);">what other sovereignty?</label>
+                </div>
+                    <div class="contents-item-wrapper">
+                    <input type="checkbox" class="checkbox" id="view-from-above-checkbox" name="view-from-above" checked />
+                    <label class="checkbox_label" id="view-from-above" onclick="scrollToSection(this);">view from above</label>
+                </div>
+                <div class="contents-item-wrapper">
+                    <input type="checkbox" class="checkbox" id="abstract-fascinations-checkbox" name="abstract-fascinations" checked />
+                    <label class="checkbox_label" id="abstract-fascinations" onclick="scrollToSection(this);">abstract fascinations</label>
+                </div>
+            </div>
+            <div class="section-wrapper section_number slide-left" id="contents-introduction">
+                <div class="contents-image introduction-image">
+                    <img src="assets/024.jpeg" />
+                </div>
+                <div class="contents-item-wrapper">
+                    <input type="checkbox" class="checkbox" id="introduction-checkbox" name="introduction" onclick="toggle(this);" checked />
+                    <label class="checkbox_label" id="introduction" onclick="scrollToSection(this);">introduction</label>
+                </div>
+            </div>
+        </div>
+
+        <div id="title-block">
+            <div class="title-weight" id="title-container">
+                <p>
+                    Overseeing <img class="title-image" src="assets/024.jpeg" /> Amazonia: Environmental Media of Brazilian Grounds
+                </p>
+            </div>
+            <div class="title-weight" id="author-container">
+                <p>
+                    Juliana Biancardine
+                </p>
+            </div>
+        </div>
+        <div id="body-wrapper">
+            <div id="main-body-wrapper">
+                <div id="contents-spacer-margin" class="margin-block"></div>
+                <div id="contents-conclusions-block" class="margin-block margin-contracted"></div>
+                <div id="contents-part-3-block" class="margin-block margin-contracted"></div>
+                <div id="contents-part-2-block" class="margin-block margin-contracted"></div>
+                <div id="contents-part-1-block" class="margin-block margin-contracted"></div>
+                <div id="contents-introduction-block" class="margin-block margin-contracted"></div>
+                <p id="main-body">
+                    [SUB:Introduction]
+                    bout the destruction of [IMG:009.GIF] [CAPTION:This is a test of the image caption script] Amazonia was heightened [FOOTNOTE:this is a test of the footnote script] in the United States. Along with a particularly hot and dry summer, astronauts in NASA’s Discovery mission photographed thick clouds of smoke covering a vast area of Brazilian territory. [EXTRA 2] According to newspaper coverage, compared with the last images made in 1973, the difference was “terrifying.” Alongside the space view, closer photographs and recordings of rainforest fires raised global awareness about the growing greenhouse gas emissions and the reduction of carbon sinks because of uncontrolled deforestation. It was around this time that the atmospheric connection between distant places became popular and climate change became a legible concept. With the rise in public consciousness about the risks of transboundary environmental issues, Brazil gained leverage as a nation central in global environmental debates. At the same time, multiple sovereignties started to overlap in the Amazonia in autochthonous and foreign efforts to manage and protect the region. An environmentalist idea about sovereignty was prominent among a group of international leaders who declared the forest a planetary possession. It was 1989 when Al Gore said that “contrary to what Brazilians think, the Amazon is not their property. It belongs to all of us.”
+                    Despite the environmentalist urge of the 90s, over the course of this project’s development, deforestation in Brazilian Amazonia reached record levels. Many recent environmental reports reveal the advance of illegal cattle raising and mining in protected areas. [EXTRA 3] Alongside scientific coverage, images of a burning rainforest populate pages of newspapers, social media feeds, art exhibitions, and television screens, announcing a close and irreversible turning point. Climatic concerns gained even more urgency in the face of the relentless state violence against Amazonian peoples and ecologies over the last four years. Since 2018, Jair Bolsonaro’s former administration succeeded in pushing this poignant sense of emergency. During those four years, the region became the direct target of a politics that openly supported illegal extraction and denied support and protection to local communities, especially indigenous groups that report rampant encroachment of their lands. 
+                    [VIDEO 60] Facing this scenario. Jair Bolsonaro’s (PL) mandate, [TITLE:dododod] may feel like a national turn, an overcoming of the far-right politics that failed to secure endangered territories and endorsed illegal extraction in Amazonia. [EXTRA 4] But what comes to the fore with the rise of right-wing politics in Brazil is how Amazonia’s historic peripheralization favors an identitarian entrepreneurialism that currently pushes the frontiers of extraction further. This “neoliberalism from the ground” emerges with strength in Brazil’s North Region, where environmental devastation and far-right support juxtapose.</span> If, in the 70s, the forest symbolized a hopeful and industrial future, today, many capitalize on the ruins of this old dream. Current neoliberal models of extraction are tethered to the ways we historically represent the forest within a technical, utilitarian, and essentialist aesthetics that obscure Amazonia’s affective and embodied reality. This project maps the environmental imaginaries and designs that support, maintain, and counter extractive sensibilities that give shape to the state of emergency in the rainforest. [EXTRA 5] It unpacks the visual and discursive mechanisms that support policies, master plans, and big solutions and looks for their insights and limitations. 
+                    The stories I gathered here are, in themselves, three different models of Amazonia’s reality, told through a sequence of images. [EXTRA 6] In these pages, I weave visual analysis not to reveal one objective truth but to bring forth the complex network of discourses, mappings, words, and photographs that make it real and meaningful. [EXTRA 7] Real because, when crossed, the images leave any attempt to describe a territory accurately behind as they become enmeshed with subjective illusions and multiple perceptions that one might have of it. This project is about how these images are far from neutral and about how they can act back and shape the world they represent. 
+                    Reactionary and [SECTION:part-one]violent responses grow apace with the falsely obvious goodwill of those acting on the forest's behalf. The climate crisis creates new technologies of representation and control that, by trying to solve the problem at hand, hide their ideological conduct. They delineate a binary that couples science and local knowledge to work in opposition to alien criminals. They trace a return path to a state of “natural” equilibrium. Instead of the perception that human activity can only cause harm, this project tries to make the point that Amazonian media (its produced, artificial, cartographical, digital presence) is just another part of its ecological systems.  Thus, just as the mercury in the rivers, they should be a matter of concern when thinking about the equitable and sustainable models for the rainforest. The mapping that I trace here identifies a dispersed, multilayered, and multiscale situation that can’t be bounded to the north region of Brazil. Amazonia then is more than a territory defined with an outline, it is both material and imagined, constituted spatially and meaningfully through media. 
+                    Media have always influenced [SUB:yoyo] how people think and act. They mediate meaning between that which is concrete and spatial to that which is seen and interpreted. From printed propaganda, religious images, or tv shows, we know how media operates in population management. When we think about Amazonia, these media are central in making real to a planetary audience how they are physically connected to a distant reality. But if today images of deforestation or the violence against indigenous peoples become viral, the awareness they are capable of raising is far from reversing the situation. In fact, images can work mischievously forging the impression that awareness and harm reduction and other benevolent signaling are enough to change the reality on the ground. But despite the accumulation of evidence of devastation and its vast circulation on ‘traditional’ media, deforestation hits record levels today. [EXTRA 9] There is an awkward tension between the growing visibility of social and ecological harm in mainstream media and the expansion of ethnic hatred and climate denialism. While the multiplication of evidence renders the urgencies of Amazonia visible, it can backfire for assuming a universal interpretation. Creating a sense of catastrophe and chaos, these media can direct broad conscientization and flatten the solution as a matter of order reinforcement. Under this crisis it seems that the situation can only be settled with more surveillance and armed action against illegality. 
+                    Media also have the power to work as masks. They create unconscious conditions that are the background of environmental degradation. This project presents this “cloaking device.” Whether in the totalizing view from above or the hyper-localized view from the ground, framing an event to represent it always means to leave something behind. [EXTRA 10] Not to be simplified as an illusion, these images hide all the senses besides vision and all the unseen and situated experiences of an event in ways to maintain the primary system in which state and non-state actors can ‘sustainably’ profit and grow. For instance, PART I of this project, Things from the Underground, is concerned with reactionary images that ignore and openly oppose to environmentalists’ discourses. Here, the cloaking device works through images that mobilize a cruel optimism and push the frontier of extraction further against the evidence that points out the risks of doing so, as when the image of gold keeps serving as a signifier for self-enrichment while covering that the activity can only privilege very few. Environmental denialists use media to mobilize affects and justify extraction despite the stark evidence about its risks. It refers to the dynamics of desire and deceit that moves people to act ‘irrationally’ or against the basic logic of self-defense that could guarantee their own survival. 
+                    PART I looks at Amazonia through representations of gold mining. It looks at Itaituba, [EXTRA 11] a node in the global supply chain of gold. Known as the ‘gold-nugget city,’ its economy and identity are based on mining. The once small-scale and artisanal activity practiced by individual miners is now performed at an industrial scale, backed by foreign and local corporations that find less visible end uses for the metal. The celebrated memory of the artisanal miner has been used as a mask to industrial-scale extraction. In large scale, the search for gold creates a toxic footprint, with mines continuously opened within protected territories. 
+                    Populist discourses can mingle with gold mining’s promises to mobilize desires and optimism in para-state projects of extraction. They attach gold to the illusions of self-management and personal enrichment and reach those frustrated with the failures of top-down developmental plans. Far-right discourses encourage a violent reaction that sees illegal extraction as a rebellious and anti-systemic enterprise, as they mobilize fear of losing land for conservation units and indigenous territories. What is important to underline with the study of illegal mining, is that the cause for devastation that reaches protected areas is not only the dismantling of environmental protection organizations, the clear support of the former president, the international companies that buy illegal commodities, or the state’s support for industrial investment in the region, but an aggressive urge for entitlement that emerges from a libertarian individualistic identity. Again, media here works as a mask that hides the historical and contemporary fallacies of the rainforest and its inhabitants as an enemy to the project of a nation.
+                    Despite very recent, the denialist turn under Bolsonaro’s mandate lead to the dismantling of an environmental protection apparatus that will have long lasting consequences. But grappling with them asks us to study the previous and opaquer commonalities around the apparently opposing fields of populist environmentalism and far-right climate denialism. As we will see in PART II, Partitioning Grounds, images can articulate a shallow solutionist imagination. Differently from the flat denialist lure, they don’t deny the problem and the need for a change in the management of extraction, but they do so by assuming simplistic solutions. Often, these solutions serve a neoliberal resource extraction scheme that facilitates capital accumulation in the name of the protection of Amazonia.   
+                    On the typical lists of threats faced in the rainforest, the absence of state planning, infrastructure, and law enforcement gives a rundown of the problem. The common sense that guides ecological action centers the state's responsibility as a drawing of lines and limits that divide that which is preserved from that which is extractable. These delimitations work within the logic of the state as a guardian, in which barriers seem like a benevolent and concerned territorial management tool. [EXTRA 12] They can sound just right in environmental reports or financial conferences as strategies to overcome underdevelopment and environmental hazard without giving up on development. But these tool’s work is ambiguous. Romanticized images of a stable rainforest and distanced cartographies that partition the land fail to represent the rainforest to convey and combat the systemic and enduring spatial and psychic patterns that cause social and environmental injustice. I understand that these images are a less obvious front regarding the debates surrounding environmental protection, even though they may have greater effects on the behavioral patterns that create the conditions for the abusive extraction models we see today.
+                    It is this irony of environmentalist policies that I analyze in PART II. The starting point for this analysis was a Free Trade Zone inaugurated in Manaus. On the center of Amazonia, the zone was established in 1967, in line with prevailing models for developing so-called third-world countries. Adding to a five-year plan for development and the liberalization of Brazil’s economy, the Zone was planned as a temporary measure. Now after 54 years, the Free Trade Zone adopted an updated “green” format that guarantees its further longevity. Despite the lack of regulation at the core of its purpose, the zone’s defenders argue that it works as an urban employment engine that attracts illegal workers from the preserved areas of the forest. As it creates urban employment, the Zone is seen as a mechanism to prevent illegal logging and mining in the region. But, at the same time, the Zone dismantled traditional non-abusive production circuits and made the city economy dependent on imports. While presenting itself as a symbol of national pride and a sustainable future, the Zone reinforces the peripherical status of the region by making tax exemptions an inevitable reality. 
+                    PART II analyzes the images of sustainable development that mobilized leftist agendas in the early 2000s and how they were captured by developmental and conservation projects with neoliberal underpinnings. As the image of indigeneity is a seemingly opposition to distanced interests, it became a tool in populist discourses that associate environmentalism with the paternalist role of the state as a caretaker. [EXTRA 13] This imaginary of protection then comes with another type of spatial enclave. If the Free Trade Zone works as a kind of bait to attract those who would extract resources autonomously and illegally, the demarcation of indigenous lands serves as a barrier to cast them out. Both restrain movement and create a contour, a place, either by entitlement or prohibition. Creating an image of autochthony attached to preservation and care bounds indigenous peoples to territories while fueling a pseudo-environmentalist agenda. Demarcation connects people to a place and, under the premise of environmental and social protection, ends up facilitating dispossession. Land demarcation is an effective immediate response and not something to fight against. But environmental geopolitics that effaces borders rather than multiplies them is key when thinking that this is the spatial mechanism that historically controls the movement of people to facilitate the movement of capital.
+                    PART III, Looking at the Sky, explores a type of border effacement. In this story, I search for ways in which the visualization tools that put Amazonia at the center of planetary debates around climate change can tease out an imagined climate policy that spans beyond the harsh borders of nation-states. [EXTRA 14] The central object of study are the climate models used to demonstrate the influence of local environmental destruction within atmospheric systems. The models attempt to predict an avoidable planetary future and mobilize action around the urgency of climate-centered geopolitics. With contradictory cultural techniques, they can make otherwise inaccessible reality perceivable. [EXTRA 15] But how much of these simulations are a bent version of reality to show us what we want to see? 
+                    TEST HERE[SUB:things of the underground]
+                    It is this irony of environmentalist policies that I analyze in PART II. The starting point for this analysis was a Free Trade Zone inaugurated in Manaus. On the center of Amazonia, the zone was established in 1967, in line with prevailing models for developing so-called third-world countries. Adding to a five-year plan for development and the liberalization of Brazil’s economy, the Zone was planned as a temporary measure. Now after 54 years, the Free Trade Zone adopted an updated “green” format that guarantees its further longevity. Despite the lack of regulation at the core of its purpose, the zone’s defenders argue that it works as an urban employment engine that attracts illegal workers from the preserved areas of the forest. As it creates urban employment, the Zone is seen as a mechanism to prevent illegal logging and mining in the region. But, at the same time, the Zone dismantled traditional non-abusive production circuits and made the city economy dependent on imports. While presenting itself as a symbol of national pride and a sustainable future, the Zone reinforces the peripherical status of the region by making tax exemptions an inevitable reality. 
+                    PART II analyzes the images of sustainable development that mobilized leftist agendas in the early 2000s and how they were captured by developmental and conservation projects with neoliberal underpinnings. As the image of indigeneity is a seemingly opposition to distanced interests, it became a tool in populist discourses that associate environmentalism with the paternalist role of the state as a caretaker. [EXTRA 13] This imaginary of protection then comes with another type of spatial enclave. If the Free Trade Zone works as a kind of bait to attract those who would extract resources autonomously and illegally, the demarcation of indigenous lands serves as a barrier to cast them out. Both restrain movement and create a contour, a place, either by entitlement or prohibition. Creating an image of autochthony attached to preservation and care bounds indigenous peoples to territories while fueling a pseudo-environmentalist agenda. Demarcation connects people to a place and, under the premise of environmental and social protection, ends up facilitating dispossession. Land demarcation is an effective immediate response and not something to fight against. But environmental geopolitics that effaces borders rather than multiplies them is key when thinking that this is the spatial mechanism that historically controls the movement of people to facilitate the movement of capital.
+                    [SUB:demarcating difference]
+                    PART III, Looking at the Sky, explores a type of border effacement. In this story, I search for ways in which the visualization tools that put Amazonia at the center of planetary debates around climate change can tease out an imagined climate policy that spans beyond the harsh borders of nation-states. [EXTRA 14] The central object of study are the climate models used to demonstrate the influence of local environmental destruction within atmospheric systems. The models attempt to predict an avoidable planetary future and mobilize action around the urgency of climate-centered geopolitics. With contradictory cultural techniques, they can make otherwise inaccessible reality perceivable. [EXTRA 15] But how much of these simulations are a bent version of reality to show us what we want to see? 
+                    <div id="view-from-above-section"><p>HEREEEsadfasdfEE</p></div>
+                </p>
+            </div>
+            <div id="media-toggles-wrapper">
+                <div id="media-toggles">
+                    <div class="contents-item-wrapper">
+                        <input type="checkbox" class="checkbox" id="things-of-the-underground-checkbox" name="things-of-the-underground" checked />
+                        <label class="checkbox_label" id="things-of-the-underground">images</label>
+                    </div>
+                    <div class="contents-item-wrapper">
+                        <input type="checkbox" class="checkbox" id="what-other-sovereignty-checkbox" name="what-other-sovereignty" checked />
+                        <label class="checkbox_label" id="what-other-sovereignty">videos</label>
+                    </div>
+                        <div class="contents-item-wrapper">
+                        <input type="checkbox" class="checkbox" id="view-from-above-checkbox" name="view-from-above" checked />
+                        <label class="checkbox_label" id="view-from-above">captions</label>
+                    </div>
+                    <div class="contents-item-wrapper">
+                        <input type="checkbox" class="checkbox" id="abstract-fascinations-checkbox" name="abstract-fascinations" checked />
+                        <label class="checkbox_label" id="abstract-fascinations">footnotes</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <script src="image-zoom.js"></script>
+        <!-- TO DO:
+        - fix regex validator and make robust X
+        - link scripts separately X
+        - make toggle functions robust X
+        - make scroll function robust X
+        - add section marker to all classes X
+        - make section toggles work with toggle function X
+        - refactor html injector to handle spaces X
+
+        - consider other menu possibilities (collapsible?)
+        - set up complete document & add to script 
+        - set up arena channel
+        - add animation to toggle function
+        - style cursors
+        - CSS print settings
+        - Mobile settings
+        - Fix image zoom issue
+        - Add link html to footnotes
+        - Add link styling to footnotes
+        - Add text styling to footnotes, captions, body
+        - toggle divs
+    -->
+
+        
+    </body>
+</html>
