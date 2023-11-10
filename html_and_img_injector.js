@@ -6,9 +6,9 @@ function addHTML() {
     let img = /\[IMG:.*\]/i;                // image identifier
     let title = /\[TITLE:.*\]/i;            // title identifier
     let section = /\[SECTION:.*\]/i;
-    let section = /\[SECTIONEND:.*\]/i;
     let sectionTitle = /\[SECTIONTITLE:.*\]/i;   // section identifier
     let subSectionTitle = /\[SUBSECTIONTITLE:.*\]/i;    // subsection identifier
+    let sectionEnd = /\[SECTIONEND:.*\]/i;
     let footnote = /\[FOOTNOTE:.*\]/i;      // footnote identifier
     let caption = /\[CAPTION:.*\]/i;        // caption identifier                                               // declare variable to store section names
     let newString = string.replaceAll(pattern, function(match) {
@@ -35,28 +35,27 @@ function addHTML() {
     
         if(match.match(img)) {
             let id = splitter(match);
-            return `<img data-zoom-image id="${id[0]}" class="text-image ${sectionClass}" src="">`;
+            return `<span class="image-wrapper"><img data-zoom-image id="${id[0]}" class="text-image ${sectionClass}" src=""></span>`;
         } else if(match.match(title)) {
             let id = splitter(match);
             return `<span class="title ${sectionClass}" id="${id[0]}">${id[1]}</span>`;
         } else if(match.match(section)) {
             let id = splitter(match);
-            return `<span class="section ${sectionClass}" id="${id[0]}">`;
+            sectionClass = id[0]  //update the scetion class for all elements
+            return `<div class="section ${sectionClass}" id="${id[0]}">`;
         } else if(match.match(sectionEnd)) {
-            return `</span>`;
+            return `</div>`;
         } else if(match.match(sectionTitle)) {
             let id = splitter(match);
-            return `<span class="section ${sectionClass}" id="${id[0]}">${id[1]}</span>`;
+            return `<span class="section-title ${sectionClass}" id="${id[0]}">${id[1]}</span>`;
         } else if(match.match(subSectionTitle)) {
             let id = splitter(match);
-            console.log(id[1]);
-            return `<span class="subsection ${sectionClass}" id="${id[0]}-section">${id[1]}</span>`;
+            return `<span class="subsection-title ${sectionClass}" id="${id[0]}-section">${id[1]}</span>`;
         } else if(match.match(footnote)) {
             let id = splitter(match);
             return `<span class="footnote ${sectionClass}" id="${id[0]}">${id[1]}</span>`;
         } else if(match.match(caption)){
             let id = splitter(match);
-            console.log("caption: " + id);
             return `<span class="caption ${id[0]}">${id[1]}</span>`;
         } else {
             console.log("error");
